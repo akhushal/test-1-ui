@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 :root {
-  --bg-color: #faf8f4; /* soft ivory background */
+  /* --bg-color: #faf8f4; 
   --text-color: #1f1f1f;
-  --accent-color: #b3925f; /* classic gold tone */
-  --border-color: #d6c8a0;
+  --accent-color: #b3925f; 
+  --border-color: #d6c8a0; */
+
+  --bg-color: #faf8f4; 
+  --text-color: #1f1f1f;
+  --accent-color: #4d726b; 
+  --border-color: #bfc8c4; 
 }
 
 body {
