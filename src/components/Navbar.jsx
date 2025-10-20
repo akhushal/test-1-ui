@@ -1,23 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import BlogList from './components/BlogList';
-import BlogPost from './components/BlogPost';
-import GoodWatch from './components/GoodWatch';
+import { Link } from 'react-router-dom';
 
-export default function App() {
+export default function Navbar() {
   return (
-    <Router>
-      <Navbar />
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<BlogList />} />
-          <Route path="/blog/:id" element={<BlogPost />} />
-          <Route path="/goodwatch" element={<GoodWatch />} />
-        </Routes>
-      </div>
-      <footer>
-        © {new Date().getFullYear()} — Built with ♥ by You
-      </footer>
-    </Router>
+    <nav className="navbar">
+      <Link to="/">Blogs</Link>
+      <Link to="/goodwatch">Good Watch</Link>
+    </nav>
   );
 }

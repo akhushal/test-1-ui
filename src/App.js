@@ -15,6 +15,9 @@ export default function App() {
           <Route path="/goodwatch" element={<GoodWatch />} />
         </Routes>
       </div>
+      <footer>
+        © {new Date().getFullYear()} — Built with ♥ by You
+      </footer>
     </Router>
   );
 }
