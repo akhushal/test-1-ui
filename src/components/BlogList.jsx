@@ -9,14 +9,15 @@ const blogs = [
 export default function BlogList() {
   return (
     <div>
-      <h1>My Writings</h1>
+      {/* <h1>My Writings</h1>
       {blogs.map(blog => (
         <div key={blog.id}>
           <Link to={`/blog/${blog.id}`}>
             <div className="blog-title">{blog.title}</div>
           </Link>
         </div>
-      ))}
+      ))} */}
+      <h1>Work in Progress</h1>
     </div>
   );
 }
