@@ -19,38 +19,43 @@ export default function App() {
         <footer
           style={{
             borderTop: "1px solid var(--border-color)",
-            padding: "0.8rem 1rem",
-            textAlign: "center",
+            padding: "0.8rem 2rem",
             fontSize: "0.9rem",
             color: "var(--text-color)",
-            opacity: 0.7,
+            opacity: 0.75,
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "0.8rem",
           }}
         >
-          © {new Date().getFullYear()} Khushal Aravapalli ·{" "}
-          <a
-            href="mailto:khushalaravapalli@gmail.com"
-            style={{ color: "var(--accent-color)", textDecoration: "none" }}
-          >
-            Email
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://www.linkedin.com/in/khushalaravapalli"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "var(--accent-color)", textDecoration: "none" }}
-          >
-            LinkedIn
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://www.instagram.com/notkhushal_"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "var(--accent-color)", textDecoration: "none" }}
-          >
-            Instagram
-          </a>
+          <div style={{ fontWeight: 500 }}>© {new Date().getFullYear()} Khushal Aravapalli</div>
+
+          <div style={{ display: "flex", gap: "1.5rem" }}>
+            <a
+              href="mailto:khushalaravapalli@gmail.com"
+              style={{ color: "var(--accent-color)", textDecoration: "none" }}
+            >
+              Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/khushalaravapalli"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--accent-color)", textDecoration: "none" }}
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://www.instagram.com/notkhushal_"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--accent-color)", textDecoration: "none" }}
+            >
+              Instagram
+            </a>
+          </div>
         </footer>
       </div>
     </Router>
