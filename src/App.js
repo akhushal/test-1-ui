@@ -16,17 +16,41 @@ export default function App() {
             <Route path="/goodwatch" element={<GoodWatch />} />
           </Routes>
         </div>
-        <footer>
-          <p className="footer-name">© {new Date().getFullYear()} — Khushal Aravapalli</p>
-          <div className="footer-links">
-            <a href="https://www.instagram.com/notkhushal_" target="_blank" rel="noreferrer">
-              Instagram
-            </a>
-            <a href="https://www.linkedin.com/in/khushalaravapalli" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
-            <a href="mailto:khushalaravapalli@gmail.com">Email</a>
-          </div>
+        <footer
+          style={{
+            borderTop: "1px solid var(--border-color)",
+            padding: "0.8rem 1rem",
+            textAlign: "center",
+            fontSize: "0.9rem",
+            color: "var(--text-color)",
+            opacity: 0.7,
+          }}
+        >
+          © {new Date().getFullYear()} Khushal Aravapalli ·{" "}
+          <a
+            href="mailto:khushalaravapalli@gmail.com"
+            style={{ color: "var(--accent-color)", textDecoration: "none" }}
+          >
+            Email
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://www.linkedin.com/in/khushalaravapalli"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--accent-color)", textDecoration: "none" }}
+          >
+            LinkedIn
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://www.instagram.com/notkhushal_"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--accent-color)", textDecoration: "none" }}
+          >
+            Instagram
+          </a>
         </footer>
       </div>
     </Router>
